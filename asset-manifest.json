@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/patient-summery/static/css/main.f9fb7dd8.css",
-    "main.js": "/patient-summery/static/js/main.dbb66f75.js",
+    "main.css": "/patient-summery/static/css/main.b38f89c4.css",
+    "main.js": "/patient-summery/static/js/main.44f04ca5.js",
     "static/js/453.e67106b2.chunk.js": "/patient-summery/static/js/453.e67106b2.chunk.js",
     "index.html": "/patient-summery/index.html",
-    "main.f9fb7dd8.css.map": "/patient-summery/static/css/main.f9fb7dd8.css.map",
-    "main.dbb66f75.js.map": "/patient-summery/static/js/main.dbb66f75.js.map",
+    "main.b38f89c4.css.map": "/patient-summery/static/css/main.b38f89c4.css.map",
+    "main.44f04ca5.js.map": "/patient-summery/static/js/main.44f04ca5.js.map",
     "453.e67106b2.chunk.js.map": "/patient-summery/static/js/453.e67106b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9fb7dd8.css",
-    "static/js/main.dbb66f75.js"
+    "static/css/main.b38f89c4.css",
+    "static/js/main.44f04ca5.js"
   ]
 }
