@@ -55,13 +55,13 @@ const Navbar = ({
                     <span style={{ ...detailStyle, marginLeft: '95px' }}>
                         Age: {age}
                     </span>
-                    <span style={{ ...detailStyle, marginLeft: '170px' }}>
+                    <span style={{ ...detailStyle, marginLeft: '215px' }}>
                         Height: {height}
                     </span>
                     <span style={{ ...detailStyle, marginLeft: '25px' }}>
                         Discharge Date: {disDate}
                     </span>
-                    <span style={{ ...detailStyle, marginLeft: '180px' }}>
+                    <span style={{ ...detailStyle, marginLeft: '160px' }}>
                         IP Visit No: {ipVisitNo}
                     </span>
                     <span style={{ ...detailStyle, marginLeft: '15px' }}>

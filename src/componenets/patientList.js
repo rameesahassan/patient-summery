@@ -1,41 +1,38 @@
 // PatientList.js
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './navbar';
 
 const PatientList = ({ patients }) => {
-    // For demonstration, assuming the patient details are known
-    const patientName = 'JINJU JOSEPH';
-    const allergies = 'Bactrim, Penicillin';
-    const dob = ' 27/07/1987';
-    const age = '37 years';
-    const sex = 'Male';
-    const weight = '68kg';
-    const height = '177cm';
-    const adDate = '19-03-2024 17:16:55 PM';
-    const disDate = '';
-    const emr = '64000014';
-    const ipVisitNo = 'IP/165';
-    const conDr = 'MOHAMMED QURESHI';
-    const admDr = 'MOHAMMED QURESHI';
+    const [patientDetails, setPatientDetails] = useState(null);
+
+    useEffect(() => {
+        fetch(
+            'https://69f6fa24-f608-418f-988d-6baaa1f22b17.mock.pstmn.io/patientdetails'
+        )
+            .then((response) => response.json())
+            .then((details) => setPatientDetails(details));
+    }, []);
 
     return (
         <div>
-            <Navbar
-                patientName={patientName}
-                allergies={allergies}
-                dob={dob}
-                age={age}
-                sex={sex}
-                height={height}
-                weight={weight}
-                adDate={adDate}
-                disDate={disDate}
-                emr={emr}
-                ipVisitNo={ipVisitNo}
-                conDr={conDr}
-                admDr={admDr}
-            />
+            {patientDetails && (
+                <Navbar
+                    patientName={patientDetails.patientName}
+                    allergies={patientDetails.allergies}
+                    dob={patientDetails.DOB}
+                    age={patientDetails.age}
+                    sex={patientDetails.sex}
+                    height={patientDetails.height}
+                    weight={patientDetails.weight}
+                    adDate={patientDetails.admissionDate}
+                    disDate={patientDetails.dischargeDate}
+                    emr={patientDetails.EMR}
+                    ipVisitNo={patientDetails.IPVisitNo}
+                    conDr={patientDetails.consultingDr}
+                    admDr={patientDetails.admittingDr}
+                />
+            )}
         </div>
     );
 };

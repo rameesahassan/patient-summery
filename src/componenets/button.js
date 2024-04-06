@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import RegistrationComponent from './registration';
 import ReferalComponent from './referel';
-import IpConsolidatedComponent from './IpConsolidated/ipConsolidated';
+
+import AccordianComponent from './Accordian/accordian';
 import ToggleButton from './toggle';
 import './button.css';
 
@@ -40,9 +41,7 @@ const Button = () => {
                 Referral Details
             </button>
 
-            {clickedButton === 'IP Consolidated View' && (
-                <IpConsolidatedComponent />
-            )}
+            {clickedButton === 'IP Consolidated View' && <AccordianComponent />}
             {clickedButton === 'Registration' && <RegistrationComponent />}
             {clickedButton === 'Referral Details' && <ReferalComponent />}
             <ToggleButton />
